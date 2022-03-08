@@ -1,0 +1,12 @@
+.search-result{
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-result label{
+    text-align: left;
+    display: inline-block;
+    width: 150px;
+}

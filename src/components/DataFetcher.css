@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: aqua;
+  background-color: rgb(15, 78, 78);
 }
 .add-entry{
   margin-left: 20px;

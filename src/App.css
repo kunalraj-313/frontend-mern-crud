@@ -1,0 +1,11 @@
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* margin-left: 400px; */
+    text-align: center;
+}
+
+.App{
+    background-color: black;
+    min-height: 100vh;
+    color: white;
+}

@@ -9,7 +9,7 @@ function DataFetcher() {
     const [keyword,setKeyword]=useState('')
     const [render,setRender]=useState(true)
 
-    const clickHandler=(flag)=>{
+    const clickHandler=(flag)=>{            //manual implementation of reducer xD
       if(flag=='add'){
         setToggle(true)
         setBtn(false)

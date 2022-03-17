@@ -1,12 +1,12 @@
-.form form{
+form{
     display: flex;
     flex-direction: column;
-    background-color: rgb(87, 70, 40);
+    background-color: rgb(78, 59, 23);
     align-items: center;
     padding-right: 125px;
 }
 
-.form form label{ 
+.updform label{ 
     text-align: right;
     display: inline-block;
     width: 150px;
@@ -14,4 +14,8 @@
 
 .add-btn{
     margin-left: 150px;
+}
+
+.stat{
+margin-left: 150px;
 }

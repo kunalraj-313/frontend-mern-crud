@@ -9,21 +9,26 @@ function Add() {
     rank: "",
     salary: "",
   });
-  const { name, age, rank, salary } = input;
+  const[result,setResult]=useState(false)
+  // const { name, age, rank, salary } = input;
 
   const changeHandler = (e) => {
     
     setInput({
      ...input, [e.target.name]: e.target.value,
     });
+    setResult(false)
   };
 
   const displayData = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:5000/add',input)
+    axios.post('https://backendcurd.herokuapp.com/add',input)
       .then(res => {
-        console.log(res);
         console.log(res.data);
+        if (res.data== "Data added Successfully"){
+          setResult(true);
+        }
+        
       }).catch(e=>{
         console.log(e.message)
       })
@@ -51,6 +56,7 @@ function Add() {
       <button type="sumbit" className='add-btn'>
         Submit
       </button>
+      {result?(<div className='stat'>Data Added Successfully!</div>):null}
       </form >
     </div>
   );
